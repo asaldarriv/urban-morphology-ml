@@ -26,7 +26,7 @@ df = pd.DataFrame(tasks, columns=["activity", "start_week", "end_week", "complet
 colors = plt.cm.tab20c(np.linspace(0, 1, len(df)))
 
 # Create the Gantt chart
-fig, ax = plt.subplots(figsize=(12, 6))
+fig, ax = plt.subplots(figsize=(14, 8))
 for i, (task, start_week, end_week, completion) in enumerate(zip(df["activity"], df["start_week"], df["end_week"], df["completion"])):
     ax.barh(len(df) - 1 - i, end_week - start_week + 1, left=start_week - 1, height=1, align='center', color=colors[i % len(colors)])
     # Add completion percentage text
@@ -36,14 +36,14 @@ for i, (task, start_week, end_week, completion) in enumerate(zip(df["activity"],
 ax.set_yticks(range(len(df)))
 ax.set_yticklabels(df["activity"][::-1])
 ax.set_xlabel("Weeks", fontsize=14, labelpad=20)
-ax.set_title("Activity Chronogram - Gantt Chart", fontsize=16, pad=40)
+ax.set_title("Activity Schedule - Gantt Chart", fontsize=20, pad=10)
 
 # Move the x-axis to the top
 ax.xaxis.set_label_position('top')
 ax.xaxis.tick_top()
 
 # Adjust margins to avoid cutting off stage names
-plt.subplots_adjust(left=0.3, top=0.85)
+plt.subplots_adjust(left=0.3, top=0.85, bottom=0.15)
 
 # Set x-axis limits to cover weeks 1 to 18
 ax.set_xlim([0, 18])
