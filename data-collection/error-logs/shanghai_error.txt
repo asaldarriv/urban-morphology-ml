@@ -1,0 +1,1 @@
+Error processing Shanghai: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=Shanghai (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021FB75B8710>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=180)'))

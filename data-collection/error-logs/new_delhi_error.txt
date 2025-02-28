@@ -1,0 +1,1 @@
+Error processing New Delhi: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=New+Delhi (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001B02844C9D0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=180)'))
