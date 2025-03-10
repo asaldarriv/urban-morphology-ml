@@ -170,5 +170,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-local-graphs/
+**/local_graphs
+**/local_graphs/
 cache/

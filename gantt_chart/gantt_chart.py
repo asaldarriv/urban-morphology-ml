@@ -56,7 +56,7 @@ ax.set_xticklabels(range(1, 19))
 ax.xaxis.grid(True, which='both')
 
 # Save the chart as an image
-plt.savefig("gantt_chart.png")
+plt.savefig("gantt_chart/gantt_chart.png")
 
 # Show the chart
 plt.show()

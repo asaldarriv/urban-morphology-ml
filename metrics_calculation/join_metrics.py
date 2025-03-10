@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-metrics_dir = 'data-collection/local-metrics'
+metrics_dir = 'results/metrics'
 
 dataframes = []
 
@@ -25,4 +25,5 @@ combined_df.columns = ['City', 'φ', 'Ηo', 'Ηw', 'ĩ', 'ς', 'k̅', 'Pde', 'P4
 
 combined_df['City'] = combined_df['City'].str.replace('_', ' ').str.title()
 
-combined_df.to_excel('data-collection/combined_metrics.xlsx', index=False)
+os.makedirs(f'results/combined_metrics/', exist_ok=True)
+combined_df.to_excel(f'results/combined_metrics/combined_metrics.xlsx', index=False)
