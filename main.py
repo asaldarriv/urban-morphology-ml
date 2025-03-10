@@ -42,7 +42,8 @@ def main():
                 elif city in local_graphs_files:
                     G_with_bearings = ox.load_graphml(f'{local_graphs_directory}/{city}.graphml')
                 else:
-                    G_with_bearings = collect_data(city, local_graphs_directory)
+                    # G_with_bearings = collect_data(city, local_graphs_directory)
+                    continue
                 bearings = process_data(G_with_bearings)
                 calculate_metrics(city, G_with_bearings, metrics_directory)
                 generate_plots(city, G_with_bearings, bearings, plots_directory)
