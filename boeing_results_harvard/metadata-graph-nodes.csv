@@ -1,0 +1,10 @@
+indicator,description,type
+osmid,Unique OSM node ID,int
+x,Longitude coordinate (EPSG:4326),float
+y,Latitude coordinate (EPSG:4326),float
+elevation,Node elevation (meters above sea level) from ASTER or SRTM,int
+elevation_aster,Node elevation (meters above sea level) from ASTER,int
+elevation_srtm,Node elevation (meters above sea level) from SRTM,int
+street_count,Number of physical street segments connected to this node,int
+bc,Normalized distance-weighted node betweenness centrality,float
+other attributes,As defined in OSM documentation,

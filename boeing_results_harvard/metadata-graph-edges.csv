@@ -1,0 +1,12 @@
+indicator,description,type
+u,Unique OSM ID of source node,int
+v,Unique OSM ID of destination node,int
+key,Unique ID if parallel edges exist between u and v,int
+osmid,Unique OSM way ID,int
+geometry,Edge centerline geometry (EPSG:4326),linestring
+length,Length along the edge (meters),float
+grade,Edge grade (rise over run),float
+grade_abs,Absolute value of edge grade,float
+oneway,Whether edge part of a one-way street,boolean
+reversed,Whether edge runs opposite direction of OSM way,boolean
+other attributes,As defined in OSM documentation,
